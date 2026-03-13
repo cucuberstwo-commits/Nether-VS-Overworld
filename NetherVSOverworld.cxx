@@ -1,12 +1,12 @@
 #include <iostream>
-#include <cmath>
 #include <string>
+#include <cmath>
 
 int main() {
 
 while (true) {
 
-    std::cout << "Welcome to Nether VS Overworld!" << std::endl << "Nether to Overworld - NTO. Overworld to Nether - OTN" << std::endl << "Select action:";
+    std::cout << "Welcome to Nether VS Overworld! V. 1.1" << std::endl << "Nether to Overworld - NTO. Overworld to Nether - OTN" << std::endl << "Select action:";
 
 std::string func;
 
@@ -22,11 +22,9 @@ std::cout << "Enter coordinates in Nether:";
 
 if (!(std::cin >> X >> Z)) {
 
-std::cout << "Error!";
+std::cout << "Error!" << std::endl;
 
-system("pause");
-
-return 1;
+continue;
 }
 
 
@@ -45,11 +43,9 @@ std::cout << "Enter coordinates in Overworld:";
 
 if (!(std::cin >> X >> Z)) {
 
-std::cout << "Error!";
+std::cout << "Error!" << std::endl;
 
-system("pause");
-
-return 1;
+continue;
 
 }
 
